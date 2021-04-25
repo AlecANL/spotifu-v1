@@ -1,0 +1,9 @@
+.link {
+  //   font: var(--baseFontBold);
+  color: var(--gray10);
+  text-decoration: none;
+  &:hover {
+    color: var(--just-white);
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,29 @@
+.buttonIcon {
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  color: var(--gray10);
+  cursor: pointer;
+  &:active {
+    transform: scale(0.98);
+  }
+  &:hover:is([class*='is-']) {
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+.is-green {
+  background-color: var(--just-green);
+  color: var(--just-white);
+}
+.is-white {
+  background-color: var(--just-white);
+  color: var(--just-black);
+}
+.buttonIcon .icon-play {
+  position: relative;
+  left: 1px;
+  top: 1px;
+  z-index: 1000;
+}

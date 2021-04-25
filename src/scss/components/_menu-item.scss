@@ -1,0 +1,30 @@
+.menuItem {
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    block-size: 2.5rem;
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+    font: var(--buttonFont);
+  }
+  a:hover {
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  &.is-active .icon-home::before {
+    content: '\e90a';
+  }
+  &.is-active .icon-search::before {
+    content: '\e915';
+  }
+  &.is-active a {
+    color: var(--just-white);
+  }
+}
+.menuItem [class^='icon-'] {
+  font-size: 1.5rem;
+}
+.is-active {
+  box-shadow: inset 4px 0 0 var(--just-green);
+}

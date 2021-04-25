@@ -1,0 +1,20 @@
+@forward '../components/player-controls';
+@forward '../components/player-playback';
+@forward '../components/player-volume';
+@forward '../components/current-playing';
+.player {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  //   padding-block-start: 1.25rem;
+  padding-block-end: 0;
+  box-shadow: inset 0 1px 0 var(--gray30);
+  gap: 1.5rem;
+  & > * {
+    flex: 1;
+  }
+}
+.player-playerVolume {
+  display: flex;
+  justify-content: flex-end;
+}

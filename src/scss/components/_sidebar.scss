@@ -1,0 +1,14 @@
+@forward '../components/logo';
+@forward '../components/list';
+@forward '../components/menu';
+@forward '../components/ellipsis';
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1.5rem;
+  background-color: var(--just-black);
+  //   inline-size: 200px;
+}

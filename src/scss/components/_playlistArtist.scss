@@ -1,0 +1,81 @@
+.playlistArtist {
+  inline-size: 13em;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--gray40);
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  &:hover,
+  &:focus-within {
+    background-color: var(--gray30);
+  }
+  &:hover .playlistArtist-cover button,
+  &:focus-within .playlistArtist-cover button {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.playlistArtist-cover {
+  position: relative;
+  margin-block-end: 1rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  pointer-events: none;
+  img {
+    vertical-align: middle;
+    pointer-events: none;
+    inline-size: 100%;
+    block-size: auto;
+  }
+  button {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    transform: translateY(0.5rem);
+    opacity: 0;
+    will-change: opacity, transform;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+}
+
+.playlistArtist-title,
+.playlistArtist-description {
+  text-transform: capitalize;
+  margin: 0;
+  pointer-events: none;
+}
+.playlistArtist-title {
+  font: var(--baseFontBold);
+  color: var(--just-white);
+}
+.playlistArtist-description {
+  font: var(--baseFont);
+}
+.playlistBanner {
+  display: flex;
+  gap: 1.5rem;
+}
+.playlistBanner-description {
+  inline-size: 19.75rem;
+  h2 {
+    color: var(--just-white);
+    font: var(--mainHeadline);
+  }
+  button {
+    border: none;
+    block-size: 2rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+    padding-block-start: 0.5rem;
+    padding-block-end: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+.is-artist {
+  border-radius: 50%;
+}

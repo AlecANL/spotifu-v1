@@ -1,0 +1,28 @@
+.column {
+  margin-block-start: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: var(--just-white);
+  &:first-child {
+    flex-basis: 25%;
+  }
+  &:nth-child(2),
+  &:nth-child(3) {
+    flex-basis: 15%;
+  }
+}
+.column-title {
+  display: inline-block;
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 0.625rem;
+  padding-block-start: 0.875rem;
+  padding-block-end: 0.875rem;
+}
+.column-description {
+  display: flex;
+  align-items: center;
+  block-size: 2.75rem;
+  padding: 0.625rem;
+  box-sizing: border-box;
+}

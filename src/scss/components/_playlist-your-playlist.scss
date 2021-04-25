@@ -1,0 +1,44 @@
+.plalistYourPlaylist {
+  inline-size: 17.5rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  //   flex-shrink: 0;
+  &:hover,
+  &:focus-within {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &:hover .playlistYourPlaylist-description button,
+  &:focus-within .playlistYourPlaylist-description button {
+    opacity: 1;
+  }
+}
+.playlistYourPlaylist-cover img {
+  inline-size: 4.75rem;
+  block-size: 4.75rem;
+  vertical-align: middle;
+}
+
+.playlistYourPlaylist-description {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+
+  button {
+    opacity: 0;
+    transition: 0.3s opacity;
+  }
+}
+
+.palylistYourPlaylist-title {
+  font: var(--baseFontBold);
+  color: var(--just-white);
+  margin: 0;
+  text-transform: capitalize;
+}

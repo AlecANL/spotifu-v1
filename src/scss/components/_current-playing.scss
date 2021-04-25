@@ -1,0 +1,35 @@
+.currentPlaying {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.currentPlaying-details {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.currentPlaying-description {
+  p {
+    margin: 0;
+  }
+}
+.currentPlaying-title,
+.currentPlaying-artist {
+  text-decoration: none;
+  display: block;
+}
+.currentPlaying-artist {
+  color: var(--gray10);
+  font: var(--smallFont);
+}
+.currentPlaying-title {
+  color: var(--just-white);
+  font: var(--baseFontBold);
+}
+
+.currentPlaying-cover img {
+  inline-size: 3.5rem;
+  block-size: 3.5rem;
+  vertical-align: middle;
+}

@@ -1,0 +1,49 @@
+.page {
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
+  padding-block-end: 2rem;
+}
+
+.page-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.page .header {
+  margin-block-end: 1rem;
+  margin-inline-start: -2rem;
+  margin-inline-end: -2rem;
+}
+.page-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.page-bannerCover {
+  block-size: 25rem;
+  position: relative;
+  img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // background-color: red;
+    background-image: linear-gradient(
+      to top,
+      var(--gray50) 10.63%,
+      transparent 102.18%
+    );
+  }
+}
+.page-bannerDescription {
+  display: flex;
+}

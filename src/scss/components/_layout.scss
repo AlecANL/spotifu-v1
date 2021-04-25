@@ -1,0 +1,31 @@
+:root {
+  --playerSize: 5.5rem;
+  --sidebarInlineSize: 15rem;
+  --minInlineSize: 48rem;
+  --minBlockSize: 37.5rem;
+}
+.layout {
+  min-inline-size: var(--minInlineSize);
+}
+.layout-block {
+  display: flex;
+}
+.layout-main {
+  position: relative;
+  block-size: calc(100vh - var(--playerSize));
+  overflow: auto;
+  flex: 1;
+}
+.layout-sidebar {
+  inline-size: var(--sidebarInlineSize);
+  block-size: calc(100vh - var(--playerSize));
+  min-block-size: var(--minBlockSize);
+  overflow: auto;
+  background-color: var(--just-black);
+}
+.layout-player {
+  flex: 1;
+}
+.u-column {
+  flex-direction: column;
+}
