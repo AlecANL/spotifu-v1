@@ -14,7 +14,7 @@ Desarrollo Frontend, Mobile o hasta Backend y así construyas o amplies tu porta
 
 Con este proyecto podrás desafiar tus habilidades como desarrollador Frontend, maquetando la interfaz de Spotifu, una de las apps más famosas de la industria musical.
 
-Puedes verlo aquí: [Demo](alecanl.github.io/spotifu-v1/)
+Puedes verlo aquí: [Demo](https://alecanl.github.io/spotifu-v1/)
 
 <h1 align="center"> 🔍 Overview</h1>
 
