@@ -17,10 +17,13 @@
     opacity: 1;
   }
 }
-.playlistYourPlaylist-cover img {
-  inline-size: 4.75rem;
-  block-size: 4.75rem;
-  vertical-align: middle;
+.playlistYourPlaylist-cover {
+  img {
+    block-size: 4.75rem;
+    inline-size: 4.75rem;
+    vertical-align: middle;
+  }
+  pointer-events: none;
 }
 
 .playlistYourPlaylist-description {
@@ -29,10 +32,11 @@
   padding: 1rem;
   box-sizing: border-box;
   align-items: center;
-
+  pointer-events: none;
   button {
     opacity: 0;
     transition: 0.3s opacity;
+    pointer-events: none;
   }
 }
 

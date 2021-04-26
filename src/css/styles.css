@@ -402,9 +402,12 @@ body {
   opacity: 1;
 }
 
+.playlistYourPlaylist-cover {
+  pointer-events: none;
+}
 .playlistYourPlaylist-cover img {
-  inline-size: 4.75rem;
   block-size: 4.75rem;
+  inline-size: 4.75rem;
   vertical-align: middle;
 }
 
@@ -414,10 +417,12 @@ body {
   padding: 1rem;
   box-sizing: border-box;
   align-items: center;
+  pointer-events: none;
 }
 .playlistYourPlaylist-description button {
   opacity: 0;
   transition: 0.3s opacity;
+  pointer-events: none;
 }
 
 .palylistYourPlaylist-title {
